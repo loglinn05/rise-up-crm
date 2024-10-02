@@ -5,6 +5,8 @@ use App\Core\Router;
 
 $router = Router::getRouter();
 
+$router->cors();
+
 $router->get('users', [UserController::class, 'index']);
 $router->get('users/{id}', [UserController::class, 'show']);
 $router->post('users', [UserController::class, 'create']);

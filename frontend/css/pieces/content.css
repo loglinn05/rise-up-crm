@@ -1,0 +1,19 @@
+.form-control::placeholder {
+  color: #dbe2e6;
+}
+
+.required::after {
+  content: "*";
+  color: red;
+  margin: 0.3em;
+}
+
+.submit-button {
+  background-color: #c9d3d9 !important;
+  color: var(--text-color) !important;
+}
+
+.submit-button:hover,
+.submit-button:active {
+  background-color: #a6b7c1;
+}

@@ -1,0 +1,24 @@
+.navbar {
+  background-color: var(--navbar-bg);
+}
+
+.header-div {
+  padding: var(--header-padding);
+}
+
+.header {
+  background-image: url("../../img/header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-link {
+  color: var(--navlink-color);
+  font-size: 1.3em;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--text-color);
+}
