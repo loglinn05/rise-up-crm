@@ -3,15 +3,10 @@
 @import url("./pieces/content.css");
 
 :root {
-  --background-gradient: linear-gradient(
-    to right,
-    #deeffe,
-    #fff 10% 90%,
-    #deeffe
-  );
+  --background-gradient: linear-gradient(to right, #eef7fe, #fff, #eef7fe);
   --text-color: #1d3557;
   --navlink-color: #305992;
-  --header-padding: 10em;
+  --header-padding: 3em 0em 3em 3em;
   --navbar-bg: #c0ccd4;
 }
 
@@ -31,15 +26,53 @@ td {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 footer {
   background-color: #a6b7c1;
   color: var(--text-color);
+}
+
+@media screen and (min-width: 425px) {
+  :root {
+    --header-padding: 3em;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  :root {
+    --header-padding: 5em 3em 5em 5em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --background-gradient: linear-gradient(
+      to right,
+      #deeffe,
+      #fff 20% 80%,
+      #deeffe
+    );
+    --header-padding: 8em 3em 8em 8em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  :root {
+    --header-padding: 8em;
+  }
 }

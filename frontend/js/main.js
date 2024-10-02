@@ -32,21 +32,23 @@ async function getAllUsers() {
           tbody.innerHTML += `
             <tr>
               <td>${user.id}</td>
-              <td>${user.name}</td>
-              <td>${user.email}</td>
-              <td>${user.tel}</td>
-              <td>${user.address}</td>
+              <td><div>${user.name}</div></td>
+              <td><div>${user.email}</div></td>
+              <td><div>${user.tel}</div></td>
+              <td><div>${user.address}</div></td>
               <td>
-                <button
-                  type="button"
-                  class="btn submit-button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#changePasswordModal"
-                  data-record-id="${user.id}"
-                  onclick="setRecordId(event)"
-                >
-                  Change Password
-                </button>
+                <div>
+                  <button
+                    type="button"
+                    class="btn submit-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#changePasswordModal"
+                    data-record-id="${user.id}"
+                    onclick="setRecordId(event)"
+                  >
+                    Change Password
+                  </button>
+                </div>
               </td>
             </tr>`;
         });

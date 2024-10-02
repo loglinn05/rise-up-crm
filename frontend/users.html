@@ -17,54 +17,56 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="container-fluid p-0 vh-100 header d-flex flex-column">
+    <div class="container-fluid vh-100 header d-flex flex-column">
       <!-- Navbar -->
-      <nav class="navbar position-fixed w-100 navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand me-4" href="index.php">
-            <img src="./img/logo.png" alt="CRM logo" height="25" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-3">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="users.html">Users</a>
-              </li>
-            </ul>
+      <div class="row w-100 position-fixed">
+        <nav class="navbar w-100 navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand me-4" href="index.php">
+              <img src="./img/logo.png" alt="CRM logo" height="25" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-3">
+                <li class="nav-item mt-lg-0 mt-3">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="users.html">Users</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
       <!-- Header -->
       <div class="row w-100 d-flex flex-grow-1">
         <div
-          class="col-6 d-flex justify-content-center align-items-center header-div"
+          class="col-xxl-6 col-md-8 col-sm-10 col-11 d-flex justify-content-center align-items-center header-div"
         >
-          <div>
-            <h1 class="mb-5">Customer Relationship Management Dashboard</h1>
+          <div class="d-flex flex-column gap-5">
+            <h1>Customer Relationship Management Dashboard</h1>
             <h2>Empowering Connections, Enhancing Engagement</h2>
           </div>
         </div>
-        <div class="col-6"></div>
+        <div class="col"></div>
       </div>
     </div>
 
     <main>
-      <div class="container">
-        <div class="row p-5 d-flex justify-content-center">
+      <div class="container mx-sm-auto mx-0 px-sm-0 px-4">
+        <div class="row py-5 px-lg-5 px-0 d-flex justify-content-center">
           <div class="col-12 py-5">
             <h2 class="mb-5 text-center">All Users</h2>
             <div class="table-responsive">
